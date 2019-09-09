@@ -17,8 +17,17 @@
         font-weight: 400
         text-transform: uppercase
         text-decoration: none
-        &_active
+        &.active
+            position: relative
             color: #fce38a
+            &::after
+                position: absolute
+                top: 22px
+                left: 0
+                content: ""
+                width: 50px
+                height: 3px
+                background-color: #fce38a
     &__content
         margin-top: 164px
         text-align: center
@@ -41,6 +50,7 @@
         height: 3px
         background-color: #ffffff
     &__more
+        cursor: pointer
         margin-top: 50px
         width: 160px
         height: 40px
@@ -50,7 +60,7 @@
         font-size: 14px
         font-weight: 700
         text-transform: uppercase
-        transition: 0.2s all
+        transition: 0.1s all
         &:hover    
             background-color: #ffffff
             color: rgba(238, 199, 136, 1)
