@@ -65,11 +65,13 @@ function showContent(array){
     array.forEach(function(item, i){
         contents[i].style.display = "none";
         dropdowns[i].style.marginBottom = "10px";
+        dropdowns[i].style.borderBottom = "1px solid #e5e5e5";
     });
     array.forEach(function(item, i){
         if(item){
             contents[i].style.display = "block";
             dropdowns[i].style.marginBottom = "0px";
+            dropdowns[i].style.borderBottom = "none";
         }
     });
 }
