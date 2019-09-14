@@ -1,12 +1,11 @@
 let dropdowns = document.querySelectorAll(".do__dropdown");
-let contentes = document.querySelectorAll(".do__dropdown-content");
-let icons = [false, false, false];
-let texts = [false, false, false];
-let current;
+let contents = document.querySelectorAll(".do__dropdown-content");
 
 dropdowns.forEach(function(item, i){
     item.addEventListener("click", function(e) {
         
+        let icons = [false, false, false];
+        let current;
         let anyOpened = false;
 
 
@@ -16,11 +15,9 @@ dropdowns.forEach(function(item, i){
         else
             icons[i] = true;
         console.log(i + " " + icons[i]);
-        console.log(icons);//+
         nullify(icons);
         live(icons, i);
-        // showContent(icons);
-        
+        showContent(icons);
 
         
         
@@ -65,35 +62,34 @@ dropdowns.forEach(function(item, i){
 });
 
 function showContent(array){
-    texts = [false, false, false];
-    console.log(findOpened(array));
-    console.log(array);
-    texts[findOpened(array)] = true;
-    contentes[findOpened(texts)].style.display = "block";
-    console.log(array);
-    console.log("------------");
+    array.forEach(function(item, i){
+        contents[i].style.display = "none";
+        dropdowns[i].style.marginBottom = "10px";
+    });
+    array.forEach(function(item, i){
+        if(item){
+            contents[i].style.display = "block";
+            dropdowns[i].style.marginBottom = "0px";
+        }
+    });
 }
 
 function live(icons, index){
     let opened = findOpened(icons);
     icons[index] = dropdowns[index].children[2].classList.toggle("do__dropdown-arrow_rotated_up");
-    console.log(icons);
     console.log(index + " " + icons);
 }
 
 function findOpened(array){
-    let index;
     array.forEach(function(item, i){
-        if(item == true){
-            index = i;
-        }
+        if(item == true)
+            return i;
     });
-    return index;
 }
 
 function check(a){
     let allFalse = true;
-    a.forEach(function(item){if(item==true) allFalse=false;});
+    a.forEach(function(item){if(item==true) allFalse=false});
     return !allFalse;
     //if any opened - true
 }
@@ -107,12 +103,8 @@ function childWithClass(item, ofClass, or){
 
 function nullify(array){
     array.forEach(function(item, i){
-        if(!item){
-            console.log(dropdowns[i]);
-            console.log(dropdowns[i].children[2]);
+        if(!item)
             dropdowns[i].children[2].classList.remove("do__dropdown-arrow_rotated_up");
-            console.log(i);
-        }
     });
 }
 
