@@ -18,45 +18,6 @@ dropdowns.forEach(function(item, i){
         nullify(icons);
         live(icons, i);
         showContent(icons);
-
-        
-        
-        
-        // parity++;
-        // opened = parity % 2 == 0 ? false : true;
-        // console.log(opened);
-        // console.log("i " + i);
-        // console.log("current " + current);
-        // dropdowns.forEach(function(cur, number){
-        //     if(number!=i){
-        //         cur.children[2].classList.remove("do__dropdown-arrow_rotated_up"); 
-        //     }
-        //     document.querySelectorAll(".do__dropdown-content")[i].style.display = "none";
-        //     dropdowns[i].style.marginBottom = "10px";
-        //     dropdowns[i].style.borderBottom = "1px solid #e5e5e5";
-        //     // cur.children[3].style.display = "none";  
-        // });
-        // document.querySelectorAll(".do__dropdown-content").forEach(function(content, contentNumber){
-        //     content.style.display = "none";
-        //     dropdowns[i].style.marginBottom = "10px";
-        //     dropdowns[i].style.borderBottom = "1px solid #e5e5e5";
-        // });
-        // dropdowns[i].children[2].classList.toggle("do__dropdown-arrow_rotated_up");
-        // if(dropdowns[i].children[2].classList.contains('do__dropdown-arrow_rotated_up')) {
-        //     document.querySelectorAll(".do__dropdown-content")[i].style.display = "block";
-        //     dropdowns[i].style.marginBottom = "0px";
-        //     dropdowns[i].style.borderBottom = "none";
-        // }
-        // if(current!=i) {
-        //     anAnotherActivity=true;
-        //     console.log('activity');
-        // }
-        // if(opened && anAnotherActivity){
-        //     dropdowns[current].style.marginBottom = "10px";
-        //     dropdowns[current].style.borderBottom = "1px solid #e5e5e5";
-        //     console.log(current + " 10px");
-        // }
-        // current = i;
         anyOpened = check(icons);
     });
 });
