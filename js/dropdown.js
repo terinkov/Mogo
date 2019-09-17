@@ -34,6 +34,7 @@ function dropdown(){
                 contents[i].classList.add("do__dropdown-content_active");
                 dropdowns[i].style.marginBottom = "0px";
                 dropdowns[i].style.borderBottom = "none";
+                dropdowns[dropdowns.length-1].style.marginBottom = "0px";
             }
         });
     }
@@ -79,7 +80,7 @@ function dropdown(){
 
 dropdown();
 
-function slider(){
+/*function slider(){
     let last = 0;
     let current = 0;
     let sliders = Slider(3);//описывает все слайдеры
@@ -166,4 +167,4 @@ function slider(){
     }
 }
 
-slider();
+slider();*/
