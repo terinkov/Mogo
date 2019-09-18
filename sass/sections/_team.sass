@@ -14,14 +14,14 @@ $transition: 0.15s all
     &__item-main        
         width: 380px
         height: 470px
+        position: relative
         &:hover
-            position: relative
             .team__item-icons-wrapper
-                z-index: 10
                 display: flex
-                // top: 40%
-                // left: 50%
-                // transform: translateX(-50%)
+                top: calc(50% - 10px)
+                left: calc(50% - 10px)
+                transform: translateX(-50%) translateY(-50%)
+                opacity: 1
             .team__item-content
                 background-color: #95e1d3
             .team__item-image
@@ -41,22 +41,37 @@ $transition: 0.15s all
         height: 100%
         transition: $transition
     &__item-icons-wrapper
+        z-index: 10
+        display: flex
         position: absolute
-        display: none
+        // display: none
+        transition: $transition
+        opacity: 0
         width: 224px
         height: 56px
-        background-color: #fce38a
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        &_active
+            display: flex
+            top: calc(50% - 10px)
+            left: calc(50% - 10px)
+            transform: translateX(-50%) translateY(-50%)
+            opacity: 1
     &__item-icon-wrapper
         width: 56px
         height: 100%
         display: flex
         justify-content: center
         align-items: center
+        z-index: 1
         border-right: 1px solid #f38181
+        background-color: #fce38a
         &:nth-last-child(1)
             border-right: none
     &__item-icon
         color: #f38181
+        z-index: 100
     &__item-text-name
         color: #333333
         font-family: Montserrat
