@@ -35,6 +35,7 @@ function dropdown(){
                 dropdowns[i].style.marginBottom = "0px";
                 dropdowns[i].style.borderBottom = "none";
                 dropdowns[dropdowns.length-1].style.marginBottom = "0px";
+                if(i==dropdowns.length-1) {contents[i].classList.add("do__dropdown-content_last");console.log("last");}
             }
         });
     }

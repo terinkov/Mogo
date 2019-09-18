@@ -1,3 +1,5 @@
+$transition: 0.15s all
+    
 .team
     min-height: 1049px
     padding: 99px 0 117px 0
@@ -13,23 +15,48 @@
         width: 380px
         height: 470px
         &:hover
+            position: relative
+            .team__item-icons-wrapper
+                z-index: 10
+                display: flex
+                // top: 40%
+                // left: 50%
+                // transform: translateX(-50%)
             .team__item-content
                 background-color: #95e1d3
             .team__item-image
                 // Style for "Rectangle"
-                background-color: #95e1d3
                 background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%)
                 transform: translate3d(-10px, -10px, 0)
             img
                 opacity: 0.1
+    &__image
+        transition: $transition
     &__item-content
         width: 100%
         height: 100%
+        transition: $transition
     &__item-image
         width: 100%
         height: 100%
+        transition: $transition
     &__item-icons-wrapper
         position: absolute
+        display: none
+        width: 224px
+        height: 56px
+        background-color: #fce38a
+    &__item-icon-wrapper
+        width: 56px
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        border-right: 1px solid #f38181
+        &:nth-last-child(1)
+            border-right: none
+    &__item-icon
+        color: #f38181
     &__item-text-name
         color: #333333
         font-family: Montserrat

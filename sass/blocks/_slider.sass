@@ -21,15 +21,23 @@ $arrowsMargin: 75px
         background-color: #cccccc
         background: url("../icons/right.png")
         margin-left: $arrowsMargin
+    &__all-content-wrapper
+        position: relative
+        // overflow: hidden
     &__content-wrapper
         display: none
-        position: relative
-        &_active
-            position: absolute
-            left: calc( 50% + 485px )
+        transition: 1s all
+        opacity: 1
+        &_first
             display: flex
+            opacity: 1
+        &_active
+            display: flex
+            opacity: 1
         &_last
-            flex-basis: 100%
+            display: none
+            opacity: 0
+        &_active_move
     &__icon
         width: 150px
         height: 150px
