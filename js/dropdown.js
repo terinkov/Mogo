@@ -15,7 +15,6 @@ function dropdown(){
                 icons[i] = false;
             else
                 icons[i] = true;
-            console.log(i + " " + icons[i]);
             nullify(icons);
             live(icons, i);
             showContent(icons);
@@ -35,7 +34,7 @@ function dropdown(){
                 dropdowns[i].style.marginBottom = "0px";
                 dropdowns[i].style.borderBottom = "none";
                 dropdowns[dropdowns.length-1].style.marginBottom = "0px";
-                if(i==dropdowns.length-1) {contents[i].classList.add("do__dropdown-content_last");console.log("last");}
+                if(i==dropdowns.length-1) {contents[i].classList.add("do__dropdown-content_last");}
             }
         });
     }
@@ -43,7 +42,6 @@ function dropdown(){
     function live(icons, index){
         let opened = findOpened(icons);
         icons[index] = dropdowns[index].children[2].classList.toggle("do__dropdown-arrow_rotated_up");
-        console.log(index + " " + icons);
     }
 
     function findOpened(array){
