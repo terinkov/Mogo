@@ -18,6 +18,10 @@
             opacity: 1
         .card__text-logo
             opacity: 1
+        .card__icons
+            opacity: 1
+        .card__icon:hover
+            background-color: red
 
 .card__img
     background: linear-gradient(to bottom, #f38181, #fce38a)
@@ -37,6 +41,29 @@
     transition: opacity .2s linear
     transform: translate3d(-50%, calc(-50% - 15px), 0)
 
+
+.card__icons
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: #fce38a
+    width: 224px
+    height: 56px
+    display: flex
+    justify-content: center
+    z-index: 2
+    opacity: 0
+    transition: opacity .2s linear
+    transform: translate3d(-50%, -50%, 0)
+
+.card__icon
+    background-color: #fce38a
+    border-right: 1px solid #f38181
+    width: 25%
+    height: 100%
+    transition: 1s all
+    &:nth-last-child(1)
+        border-right: none
 
 .card__text
     width: 100%
@@ -68,4 +95,3 @@
     font-style: italic
     font-weight: 300
     color: #999
-
