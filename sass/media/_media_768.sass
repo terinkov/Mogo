@@ -52,10 +52,71 @@ $do-height: 300px
         min-height: auto
     
     .card
+        height: auto
         &_photo
             flex-wrap: wrap
             justify-content: center
+        &__item_team
+            flex-basis: 60%
+            margin-bottom: 40px
+
+    .logos
+        height: auto
         &__item
-            flex-basis: 45%
-            &:nth-child(1)
-                margin-right: 20px
+            flex-basis: 30%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:nth-child(n+4)
+                margin-top: 20px
+
+    .work
+        &__inner
+            flex-wrap: wrap
+        .work__col
+            flex-basis: 50%
+                
+    .clients
+        &__content-wrapper
+            min-height: 600px
+
+    .blog
+        padding: 50px 0
+        &__image
+            height: 150px
+        &__calendar
+            top: 0
+    
+    .footer
+        align-items: flex-start
+        &__subcontent
+            margin-top: 10px
+        &__content
+            flex-wrap: wrap
+            justify-content: center
+        &__blogs
+            justify-content: flex-start
+        &__blogs-title
+            font-size: 30px
+        &__blogs__text
+            width: 300px
+        &__blogs__item
+            align-items: flex-start
+            justify-content: flex-start
+        &__item
+            flex-basis: 100%
+            margin-bottom: 100px
+            &:nth-last-child(1)
+                margin-bottom: 0
+        &__instagram
+            max-width: 100%
+        &__instagram-title
+            font-size: 30px
+        &__instagram-content
+            width: 50%
+        &__instagram__item
+            flex-basis: 32%
+            height: auto
+        &__instagram-img
+            width: 100%
+            height: auto
