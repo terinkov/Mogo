@@ -1,0 +1,46 @@
+$do-height: 300px
+
+@media screen and ( max-width: 1200px )
+    .header
+        &__menu
+            width: 50%
+    .text
+        width: 85%
+    .about
+        min-height: auto
+    .facts
+        height: 200px
+        &__item
+            width: 180px
+    .service
+        &__item
+            flex-basis: 30%
+    .do
+        &__content-wrapper
+            height: calc( #{$do-height} + 30px )
+        &__photo
+            width: auto
+            height: $do-height
+        &__dropdown-content_active
+            max-height: 100px
+
+    .clients
+        &__content-wrapper
+            width: auto
+            min-height: 470px
+        &__item
+            width: 45%
+            &:nth-child(n+3)
+                margin-top: 70px
+
+    .footer
+        flex-direction: row
+        &__subscribe
+            width: 320px
+            margin-right: 20px
+        &__blogs
+            margin-top: 0
+            width: 300px
+        &__break-992
+            flex-basis: 100%
+//незабудь поставить флекс врап        

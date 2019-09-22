@@ -1,0 +1,32 @@
+.header
+    display: flex
+    justify-content: space-between
+    &__logo
+        color: #ffffff
+        font-size: 30px
+        font-weight: 700
+        text-decoration: none
+    &__menu
+        width: 45%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__menu-item
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        text-decoration: none
+        &:hover
+            color: #fce38a
+        &.active
+            position: relative
+            color: #fce38a
+            &::after
+                position: absolute
+                top: 22px
+                left: 0
+                content: ""
+                width: 50px
+                height: 3px
+                background-color: #fce38a

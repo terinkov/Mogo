@@ -1,0 +1,61 @@
+$promo-margin: 100px
+$do-height: 300px
+@media screen and ( max-width: 991px )
+    .header
+        &__menu
+            width: 70%
+    .promo
+        min-height: auto
+        &__welcome
+            font-size: 120px
+            line-height: 110px
+        &__content
+            margin-top: $promo-margin
+        &__progress
+            margin-top: $promo-margin
+    .facts
+        height: 150px
+        &__item
+            width: 120px
+        &__number
+            text-align: center
+            font-size: 60px
+        &__text
+            margin-top: 15px
+            font-size: 11px
+            text-align: center
+    .service
+        min-height: auto
+        padding: 100px 0 50px 0
+        &__item-text
+            font-size: 14px
+    .feauture
+        padding-top: 80px
+    .do
+        padding: 109px 0 20px 0
+        height: auto
+        &__photo
+            width: 100%
+            height: auto
+        &__content-wrapper
+            flex-wrap: wrap
+            max-height: 710px;
+            height: auto;
+        &__photo-descr-wrapper
+            flex-basis: 100%
+            margin-top: 50px
+            margin-left: 0
+        &__dropdown-content_active
+            max-height: fit-content
+    .team
+        padding: 40px 0
+        min-height: auto
+    
+    .card
+        &_photo
+            flex-wrap: wrap
+            justify-content: center
+        &__item
+            flex-basis: 45%
+            &:nth-child(1)
+                margin-right: 20px
