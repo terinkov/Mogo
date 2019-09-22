@@ -9,6 +9,8 @@ $do-height: 380px
         &__progress-bar
             width: 100%
     .card
+        &_photo
+            width: auto
         &__item
             width: 30%
         &__inner
@@ -21,7 +23,6 @@ $do-height: 380px
         height: auto
     .do
         &__content-wrapper
-            padding: 0 100px
             height: $do-height
         &__photo
             width: auto
@@ -33,6 +34,38 @@ $do-height: 380px
             flex-wrap: nowrap
         &__dropdown-content_active
             max-height: 170px
+    .facts
+        &__item
+            width: 200px
+
     .logos
+        padding: 0
+        height: 132px
         &__wrapper
             flex-wrap: wrap
+
+    .team
+        min-height: 725px
+
+    .blog
+        &__wrapper
+            justify-content: space-between
+            width: 100%
+        &__item
+            margin-right: 0
+            width: 30%
+        &__image
+            height: 200px
+        &__calendar
+            top: 120px
+    
+    .footer
+        &__content
+            width: 100%
+            justify-content: space-between
+        &__subcontent
+            width: 100%
+        &__item
+            margin-left: 0
+            &:nth-child(1)
+                width: 400px
