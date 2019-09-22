@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sections/second-comments.sass"
-    ],
-    "names": [],
-    "file": "second-comments.min.css"
-}

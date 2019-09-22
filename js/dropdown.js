@@ -39,6 +39,15 @@ function dropdown(){
         });
     }
 
+    // function callback(i, className, callback){
+    //     contents[i].classList.remove(className);
+    //     callback(i);
+    // }
+    // function callbackF(i){
+    //     dropdowns[i].style.marginBottom = "10px";
+    //     dropdowns[i].style.borderBottom = "1px solid #e5e5e5";
+    // }
+
     function live(icons, index){
         let opened = findOpened(icons);
         icons[index] = dropdowns[index].children[2].classList.toggle("do__dropdown-arrow_rotated_up");

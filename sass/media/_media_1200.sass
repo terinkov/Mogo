@@ -1,4 +1,38 @@
-@media screen and ( min-width: 1400px )
-    .container
-        max-width: 1250px
-    
+$do-height: 380px
+
+@media screen and ( max-width: 1400px )
+    .promo
+        &__progress
+            width: 100%
+        &__progress-item
+            width: calc( 25% - 30px )
+        &__progress-bar
+            width: 100%
+    .card
+        &__item
+            width: 30%
+        &__inner
+            width: 100%
+        &__img
+            width: 100%
+            img
+                width: 100%
+    .work
+        height: auto
+    .do
+        &__content-wrapper
+            padding: 0 100px
+            height: $do-height
+        &__photo
+            width: auto
+            height: $do-height
+        &__photo-descr-wrapper
+            width: 50%
+        &__dropdown
+            width: 100%
+            flex-wrap: nowrap
+        &__dropdown-content_active
+            max-height: 170px
+    .logos
+        &__wrapper
+            flex-wrap: wrap
