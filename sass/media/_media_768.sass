@@ -38,8 +38,8 @@ $do-height: 300px
             width: 100%
             height: auto
         &__content-wrapper
+            max-height: unset;
             flex-wrap: wrap
-            max-height: 710px;
             height: auto;
         &__photo-descr-wrapper
             flex-basis: 100%
@@ -120,3 +120,17 @@ $do-height: 300px
         &__instagram-img
             width: 100%
             height: auto
+
+    .slider
+        width: calc(100% - 100px)
+        &__icon
+            margin-right: 20px
+            flex-basis: 150px
+        &__text-wrapper
+            flex-basis: 71%;
+        &__text
+            font-size: 20px
+        &__author
+            margin-top: 10px
+            &::before
+                left: -20%

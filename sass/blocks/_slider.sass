@@ -1,44 +1,42 @@
 $dividerAuthor: 70px;
 $arrowsMargin: 75px
 
+.owl-prev i, .owl-next i 
+    color: #ccc;
+
+.owl-prev, .owl-next 
+    width: 12px !important
+    height: 22px !important
+    position: absolute;
+    top: 50%;
+    // transform: translateY(-50%)
+    margin-top: -10px;
+    i
+        font-size: 40px
+
+.owl-prev 
+    left: -50px;
+
+.owl-next 
+    right: -50px;
+
+.owl-dots
+    height: 0
+
 .slider
-    width: 1200px
+    width: 978px
     margin: 0 auto
     display: flex
     justify-content: center
     align-items: center
-    &__button-prev
-        z-index: 10
-        width: 12px
-        height: 22px
-        background-color: #cccccc
-        background: url("../icons/left.png")
-        margin-right: $arrowsMargin
-    &__button-next
-        z-index: 10
-        width: 12px
-        height: 22px
-        background-color: #cccccc
-        background: url("../icons/right.png")
-        margin-left: $arrowsMargin
     &__all-content-wrapper
         position: relative
         // overflow: hidden
     &__content-wrapper
-        display: none
         transition: 1s all
         opacity: 1
         align-items: center
-        &_first
-            display: flex
-            opacity: 1
-        &_active
-            display: flex
-            opacity: 1
-        &_last
-            display: none
-            opacity: 0
-        &_active_move
+        display: flex
     &__icon
         width: 150px
         height: 150px
