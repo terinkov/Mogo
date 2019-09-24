@@ -1,11 +1,29 @@
 .header
-    display: flex
-    justify-content: space-between
+    padding: 15px 0
+    position: fixed
+    // padding-bottom: 20px
+    width: 100%
+    background: rgba(0,0,0,0);
+    transition: all 0.5s
+    &_none
+        background: rgba(232,131,130,0); 
+    &:hover
+        background: rgba(232,131,130,1);
+    &_moved
+        background: rgba(232,131,130,0.7);
+    &_promo
+        background: rgba(232,131,130,1);
+        z-index: 100
+    .hamburger
+        display: none
     &__logo
         color: #ffffff
         font-size: 30px
         font-weight: 700
         text-decoration: none
+    &__wrapper
+        display: flex
+        justify-content: space-between
     &__menu
         width: 45%
         display: flex

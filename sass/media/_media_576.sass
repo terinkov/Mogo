@@ -1,0 +1,102 @@
+@media screen and ( max-width: 768px )
+    .header
+        background: rgba(232,131,130,1);
+        .hamburger
+            display: flex
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: white
+        &__menu
+            display: none
+    .promo
+        &__progress-item
+            flex-direction: column
+        &__template
+            font-size: 60px
+        &__welcome
+            font-size: 90px;
+            line-height: 90px;
+        &__progress-text
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+        &__progress-name
+            margin: 0
+            font-size: 15px
+        &__progress-number
+            margin: 0
+            margin-right: 2px
+            font-size: 20px
+    .card
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        // flex-wrap: wrap
+        &__item
+            margin-top: 30px
+            display: block
+            width: auto
+            &:nth-child(1)
+                margin-top: 0
+    .service
+        &__wrapper
+            justify-content: space-between
+            hr
+                display: none
+        &__break
+            flex-basis: auto
+        &__item
+            flex-basis: 45%
+            &:nth-child(n+3)
+                margin-top: 30px
+    .feauture
+        &__phone
+            right: 0
+            left: auto
+    .slider
+        &__icon
+            display: none
+        &__text-wrapper
+            flex-basis: auto
+        &__text
+            font-size: 19px
+            line-height: 1.2
+        &__author
+            font-size: 20px
+            margin-left: 45px
+            &::before
+                width: 40px
+                left: -45px
+    .clients
+        &__item
+            flex-direction: column
+            align-items: center
+        &__item-text-wrapper
+            align-items: center
+            margin-left: 0
+            margin-top: 20px
+        &__item-text-description
+            text-align: justify
+        &__content-wrapper
+            height: auto
+
+    .blog
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__image
+            height: auto
+        &__item
+            width: 80%
+            margin-top: 50px
+            &:nth-child(1)
+                margin-top: 0
+    
+    .footer
+        &__subcontent
+            margin-bottom: 20px
+
+    .second-comments
+        padding: 50px 0
+        min-height: auto
