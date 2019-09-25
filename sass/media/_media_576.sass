@@ -3,12 +3,31 @@
         background: rgba(232,131,130,1);
         .hamburger
             display: flex
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            color: white
+            justify-content: space-around;
+            align-items: center
+            flex-direction: column
+            width: 34px
+            height: auto
+            &__line
+                width: 100%
+                height: 15%
+                background-color: #fff
         &__menu
-            display: none
+            display: flex 
+            justify-content: space-around
+            position: absolute  
+            left: -0px
+            transform: translateX(-100%);
+            height: calc(100vh - 64px) 
+            flex-direction: column 
+            // transform: translateX();
+            width: 50% 
+            top: 64px 
+            background: #6495ed 
+            transition: all .2s ease-in-out
+            background: rgba(232,131,130,1) 
+        &__menu-item
+            opacity: 0
     .promo
         &__progress-item
             flex-direction: column
